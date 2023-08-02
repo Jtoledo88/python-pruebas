@@ -260,6 +260,17 @@ Configurar "scripts" en el **_package.json_**
 }
 ```
 
+## Incluir codigo en el **_./src/index.js_**
+
+```javascript
+import React from "react";
+import ReactDOM from "react-dom/client";
+import App from "./App";
+
+const container = document.querySelector("#root");
+ReactDOM.createRoot(container).render(<App />);
+```
+
 ## Instalar "Bootstrap"
 
 ```shell
@@ -273,17 +284,6 @@ Configurar bootstrap en el **_index.js_**
 import "bootstrap/dist/css/bootstrap.min.css"; // CSS
 import "bootstrap/dist/js/bootstrap.bundle"; // JS
 ...
-```
-
-## Incluir codigo en el **_./src/index.js_**
-
-```javascript
-import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./App";
-
-const container = document.querySelector("#root");
-ReactDOM.createRoot(container).render(<App />);
 ```
 
 ## Incluir en el **_./src/App.js_**
