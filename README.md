@@ -47,7 +47,13 @@ $ npm i --save react react-dom
 
 ```json
 {
-  "presets": ["@babel/preset-env", "@babel/preset-react"]
+  "presets": [
+    "@babel/preset-env",
+    "@babel/preset-react",
+    {
+      "runtime": "automatic"
+    }
+  ]
 }
 ```
 
@@ -350,5 +356,6 @@ $ npm run start
 Esta es la plantilla original que se esta utilizando para hacer este tutorial en React: [Codigo Fuente](https://startbootstrap.com/theme/one-page-wonder)
 
 Menu:
+
 - [Paso 1: Carga de plantila (jsx)](step_one.md)
 - [Paso 2: Creacion de Componentes](step_two.md)
